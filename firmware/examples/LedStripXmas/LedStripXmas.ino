@@ -28,12 +28,12 @@
  * they will cause glitches on the LEDs).
  */
  
-#include <PololuLedStrip.h>
+#include <pololu-led-strip.h>
 #include <EEPROM.h>
 
 // Create an ledStrip object on pin 12.
-#define LED_SIGNAL_PIN 12
-PololuLedStrip<LED_SIGNAL_PIN> ledStrip;
+#define LED_SIGNAL_PIN A0
+pololu-led-strip<LED_SIGNAL_PIN> ledStrip;
 
 #define NEXT_PATTERN_BUTTON_PIN  2  // button between this pin and ground
 #define AUTOCYCLE_SWITCH_PIN  3  // switch between this pin and ground

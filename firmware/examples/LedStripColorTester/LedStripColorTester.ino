@@ -2,7 +2,7 @@
  * type in a color on a PC and see it on the LED strip.
  *
  * To use this, you will need to plug an Addressable RGB LED
- * strip from Pololu into pin 12.  After uploading the sketch,
+ * strip from Pololu into pin A0.  After uploading the sketch,
  * select "Serial Monitor" from the "Tools" menu.  In the input
  * box, type a color and press enter.
  *
@@ -23,10 +23,10 @@
  * the color.
  */
  
-#include <PololuLedStrip.h>
+#include <pololu-led-strip.h>
 
 // Create an ledStrip object and specify the pin it will use.
-PololuLedStrip<12> ledStrip;
+pololu-led-strip<A0> ledStrip;
 
 // Create a buffer for holding the colors (3 bytes per color).
 #define LED_COUNT 60

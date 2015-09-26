@@ -3,14 +3,14 @@
  * Addressable RGB LED Strip from Pololu.
  *
  * To use this, you will need to plug an Addressable RGB LED
- * strip from Pololu into pin 12.  After uploading the sketch,
+ * strip from Pololu into pin A0.  After uploading the sketch,
  * you should see a moving rainbow.
  */
 
-#include <PololuLedStrip.h>
+#include <pololu-led-strip.h>
 
 // Create an ledStrip object and specify the pin it will use.
-PololuLedStrip<12> ledStrip;
+pololu-led-strip<A0> ledStrip;
 
 // Create a buffer for holding the colors (3 bytes per color).
 #define LED_COUNT 60
