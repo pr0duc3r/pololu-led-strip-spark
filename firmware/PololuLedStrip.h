@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Arduino.h>
+//#include <Arduino.h>
 
 #if defined(__AVR__)
 #include <avr/io.h>
