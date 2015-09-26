@@ -1,0 +1,7 @@
+{
+  "name": "pololu-led-strip",
+  "author": "Leandro Cura <leandrocura@gmail.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Particle Spark version of the Pololu Led Strip libraries for Arduino"
+}
