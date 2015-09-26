@@ -7,10 +7,10 @@
  * you should see a moving rainbow.
  */
 
-#include <pololu-led-strip.h>
+#include <PololuLedStrip.h>
 
 // Create an ledStrip object and specify the pin it will use.
-pololu-led-strip<A0> ledStrip;
+PololuLedStrip<A0> ledStrip;
 
 // Create a buffer for holding the colors (3 bytes per color).
 #define LED_COUNT 60

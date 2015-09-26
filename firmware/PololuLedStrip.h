@@ -17,7 +17,7 @@
 #elif defined(__arm__)
 
 #if !(F_CPU == 84000000)
-#error "On an ARM, this version of the pololu-led-strip library only supports 84 MHz."
+#error "On an ARM, this version of the PololuLedStrip library only supports 84 MHz."
 #endif
 
 #endif
@@ -39,7 +39,7 @@ namespace Pololu
     void virtual write(rgb_color *, unsigned int count) = 0;
   };
 
-  template<unsigned char pin> class pololu-led-strip : public PololuLedStripBase
+  template<unsigned char pin> class PololuLedStrip : public PololuLedStripBase
   {
     public:
     void virtual write(rgb_color *, unsigned int count);
@@ -220,7 +220,7 @@ namespace Pololu
 
   #endif
 
-  template<unsigned char pin> void __attribute__((aligned(16))) pololu-led-strip<pin>::write(rgb_color * colors, unsigned int count)
+  template<unsigned char pin> void __attribute__((aligned(16))) PololuLedStrip<pin>::write(rgb_color * colors, unsigned int count)
   {
     #if defined(__AVR__)
     digitalWrite(pin, LOW);
